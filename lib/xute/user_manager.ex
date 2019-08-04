@@ -7,6 +7,7 @@ defmodule Xute.UserManager do
   alias Xute.Repo
 
   alias Xute.UserManager.User
+  alias Comeonin.Bcrypt
 
   def authenticate_user(username, plain_text_password) do
     query = from u in User, where: u.username == ^username
