@@ -28,3 +28,7 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
+
+config :xute, Xute.UserManager.Guardian,
+  issuer: "xute",
+  secret_key: "gHV/twmR5J4sphLplk2PtA8l2u5L/csmE0rZOxEuGvhQTGSJvrXAKO4WRUOiCwV6"
