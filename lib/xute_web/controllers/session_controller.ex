@@ -33,6 +33,8 @@ defmodule XuteWeb.SessionController do
   end
 
   def logout(conn, _) do
-
+    conn
+    |> Guardian.Plug.sign_out()
+    |> redirect(to: "/login")
   end
 end
