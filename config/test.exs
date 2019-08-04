@@ -4,7 +4,7 @@ use Mix.Config
 config :xute, Xute.Repo,
   username: "postgres",
   password: "postgres",
-  database: "xute_test",
+  database: "xuteg_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 

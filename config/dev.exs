@@ -4,7 +4,7 @@ use Mix.Config
 config :xute, Xute.Repo,
   username: "postgres",
   password: "postgres",
-  database: "xute_dev",
+  database: "xuteg_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
