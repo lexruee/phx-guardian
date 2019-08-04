@@ -41,6 +41,7 @@ defmodule XuteWeb do
 
       import XuteWeb.ErrorHelpers
       import XuteWeb.Gettext
+      import XuteWeb.ViewHelper
       alias XuteWeb.Router.Helpers, as: Routes
     end
   end

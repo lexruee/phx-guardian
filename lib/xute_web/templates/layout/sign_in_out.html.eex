@@ -1,0 +1,5 @@
+<%= if logged_in?(@conn) do %>
+    <%= link "Log out", to: Routes.session_path(@conn, :logout), method: "post" %>
+<% else %>
+    <%= link "Log in", to: Routes.session_path(@conn, :login) %>
+<% end %>
